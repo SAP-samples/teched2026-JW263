@@ -1,53 +1,36 @@
-# Containing Files
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2026-JW263)](https://api.reuse.software/info/github.com/SAP-samples/teched2026-JW263)
 
-1. The LICENSE file:
-In most cases, the license for SAP sample projects is `Apache 2.0`.
-
-2. The REUSE.toml file: 
-The [Reuse Tool](https://reuse.software/) must be used for your samples project. You can find the REUSE.toml in the project initial. Please replace the parts inside the single angle quotation marks < > by the specific information for your repository.
-
-3. The README.md file (this file):
-Please edit this file as it is the primary description file for your project. You can find some placeholder titles for sections below.
-
-# Session ID - Session Title
+# JW263 - AI-assisted optimization of SAP front-end application performance
 
 ## Description
 
-This repository contains the material for the SAP TechEd 2026 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2026 session called JW263 - AI-assisted optimization of SAP front-end application performance.  
 
 ## Overview
 
-This session introduces attendees to...
+Apply your optimization skills toward application performance. Learn how to analyze for performance bottlenecks in the front-end of your application and how to identify performance problems. Find out what tools and best practices can help improve your applications based on SAPUI5 or the SAP Fiori design system.
+Explore how AI can help with the optimization in many ways.
+Front-end performance includes several aspects like networking, scripting (parsing and running JavaScript), rendering (both html and CSS), etc. Since this hands-on workshop uses SAPUI5, we will focus on network analysis because the other topics, like rendering, etc, are handled by the framework.
 
 ## Requirements
 
-The requirements to follow the exercises in this repository are...
+The requirements to follow the exercises in this repository are web applications development knowledge and SAPUI5 Basics.
 
 ## Exercises
 
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
-
-- [Getting Started](exercises/ex0/)
-- [Exercise 1 - First Exercise Description](exercises/ex1/)
-    - [Exercise 1.1 - Exercise 1 Sub Exercise 1 Description](exercises/ex1#exercise-11-sub-exercise-1-description)
-    - [Exercise 1.2 - Exercise 1 Sub Exercise 2 Description](exercises/ex1#exercise-12-sub-exercise-2-description)
-- [Exercise 2 - Second Exercise Description](exercises/ex2/)
-    - [Exercise 2.1 - Exercise 2 Sub Exercise 1 Description](exercises/ex2#exercise-21-sub-exercise-1-description)
-    - [Exercise 2.2 - Exercise 2 Sub Exercise 2 Description](exercises/ex2#exercise-22-sub-exercise-2-description)
-
-  
-**OR** Link to the Tutorial Navigator for example...
-
-Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
-
-**IMPORTANT**
-
-Your repo must contain the .reuse and LICENSES folder and the License section below. DO NOT REMOVE the section or folders/files. Also, remove all unused template assets(images, folders, etc) from the exercises folder. 
+- [Getting Started](exercises/ex0/README.md)
+- [Exercise 1 - Understanding network traffic](exercises/ex1/README.md)
+- [Exercise 2 - UI5 Builder](exercises/ex2/README.md)
+- [Exercise 3 - Analyzing network traffic](exercises/ex3/README.md)
+- [Exercise 4 - Analyzing OData requests](exercises/ex4/README.md)
+- [(Bonus) Exercise 5 - Initial Load and Live Mode](exercises/ex5/README.md)
 
 ## Contributing
+
 Please read the [CONTRIBUTING.md](./CONTRIBUTING.md) to understand the contribution guidelines.
 
 ## Code of Conduct
+
 Please read the [SAP Open Source Code of Conduct](https://github.com/SAP-samples/.github/blob/main/CODE_OF_CONDUCT.md).
 
 ## How to obtain support
@@ -55,4 +38,5 @@ Please read the [SAP Open Source Code of Conduct](https://github.com/SAP-samples
 Support for the content in this repository is available during the actual time of the online session for which this content has been designed. Otherwise, you may request support via the [Issues](../../issues) tab.
 
 ## License
-Copyright (20xx-)20xx SAP SE or an SAP affiliate company and <your-project> contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP/<your-project>).
+
+Copyright 2026 SAP SE or an SAP affiliate company and JW263 contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP/JW263).

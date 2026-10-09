@@ -1,0 +1,8 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:u="sap.ui.unified" xmlns:macros="sap.fe.macros">
+	<VBox id="_IDGenVBox" core:require="{ handler: 'com/sap/teched/jw263/incidents/ext/fragment/TestSection'}">
+		<Button id="_IDGenButton" text="TestSection" press="handler.onPress" />
+		<u:Calendar
+				id="calendar"
+				select="handleCalendarSelect" />
+	</VBox>
+</core:FragmentDefinition>
