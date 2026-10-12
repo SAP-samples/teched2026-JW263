@@ -85,11 +85,14 @@ It is important to understand how OData works. Let's break down the last request
 This all means that with just one OData request, elements from three different entities, different properties and additional data like number of elements (count) are fetched.
 
 > [!TIP]
-> Batching OData requests into a single one reduces the number of round trips. The individual requests will be processed in parallel on an ABAP application server. However, CAP processes them sequentially, so, in complex scenarios, we need to find the right balance between:
+> Batching OData requests into a single one reduces the number of round trips. The individual requests will be processed in parallel on an ABAP application server. However, CAP processes them by default sequentially, so, in complex scenarios, we need to find the right balance between:
 >
 > - Sending one batch requests with 12 (for example, could be any big number) individual OData requests
 > - Sending 12 individual requests to the server
 > - Sending 2 batch requests with 6 individual OData requests each. Or maybe 5 and 7. It really depends on the use case.
+
+> [!NOTE]
+> OData $batch requests in CAP can now be processed in parallel, depending on the content. Find more about it: [CAP Parallel gets in batch](https://cap.cloud.sap/docs/releases/2026/feb26#parallel-gets-in-batch)
 
 ## Exercise 4.3 Understand OData features in manifest
 
