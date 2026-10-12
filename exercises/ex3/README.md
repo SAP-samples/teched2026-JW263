@@ -93,7 +93,43 @@ Missing library dependencies can happen when we rely on tools that might have a 
 
 ## Exercise 3.4 Evaluate and refine until your application is fully optimized
 
-1. On the browser, check again the latest result of the network trace. Is the number of requests less than 100? Do you still see some single requests? Spend again few minutes trying to see if everything is ok.
+This exercise offers a good opportunity for AI assistance. In order to show what possibilities we have, we have created a Skill. Unfortunately, we do not have Joule Work Desktop available on the session laptops, so we will use claude code instead, but the procedure is very similar. If you wish to proceed with manual work, continue with Option B) Manual Work. Otherwise, go ahead with Option A) AI Assistance.
+
+### Option A) AI Assistance
+
+1. On the browser, download the HAR file and save it as `incidents-app-dist-build-mdc.har` in the folder `HAR_files` located in the root folder. This is available in the Chrome Developer Tools, `Network` tab via `Export HAR` button:
+
+   ![Download HAR](./images/DevTools-download-HAR.png)
+
+2. Open claude code in Visual Studio Code.
+
+   ![Open Claude Code](./images/open_claude_code.png)
+
+3. The skill we have provided is called `analyze-optimize-front-end` and it takes one HAR file as input parameter. In the Claude Code chat, just enter `/analyze-optimize-front-end incidents-app-dist-build-mdc.har`:
+
+   ![Claude Code Chat](./images/claude_code_chat.png)
+
+4. This skill considers all the requests in the HAR file, groups them by library matching them against the libraries available in file `sap-ui-version.json` and suggests dependencies to be included in the `manifest.json` file. The result will look similar to this one:
+
+   ![Analize-Optimize-Front-End](./images/skill_dependency_recommendations.png)
+
+5. Make sure to remember to rename the `app/incidents/dist` folder after every change since we are going to test them all in the next exercise. You might have less folders when using the AI Assistance option.  
+
+### Backup Skill
+
+Sometimes there might be connectivity issues to the LLMs back end, or you might be working with limited amount of tokens or any other reason that prevent the usage of AI. For this example, it is also possible to use any AI to produce in advance a deterministic javascript procedure that mimics the skill. There is one already available in folder `backup-skill`. In Terminal, execute:  
+
+   ```sh
+   node .\backup-skill\analyze-har.js .\HAR_files\incidents-app-dist-build-mdc.har
+   ```
+
+The result will look like this:
+
+   ![Result backup skill](./images/result_backup-skill.png)
+
+### Option B) Manual work
+
+1. On the browser, check again the latest result of the network trace. Is the number of requests less than 100? Do you still see some single requests? Spend again few minutes trying to see if everything is ok. At this point of time, we have learnt how to evaluate the network trace and how much manual effort might involve. You may continue with 3.4.2 if you wish to do everything manually, or jump ahead to 3.4.6 for some AI assistance in this task.
 
 2. Indeed we can still see some single requests. The next one is ControlVariantApplyAPI.js. Again, navigate to the UI5 Demo Kit and this time, search ControlVariantApplyAPI in the search box. This search also works quite well and should return one result, indicating that the library is sap.ui.fl.
 
