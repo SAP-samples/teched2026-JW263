@@ -31,7 +31,7 @@ You will be able to decide whether to enable or disable the initial load based o
    npm start
    ```
 
-3. Open the app in Chrome via the URL `http://localhost:4004/launchpage.html`. Repeat the navigation steps from exercises 4.1 and 4.2:
+3. Open the app in Chrome via the URL ([http://localhost:4004/launchpage.html](http://localhost:4004/launchpage.html)). Repeat the navigation steps from exercises 4.1 and 4.2:
    1. Reload the page in case you did not open it freshly.
    2. Click on the tile `Incident-Management-Latest-Build`.
    3. Navigate back to the Launchpad.
@@ -105,7 +105,7 @@ You will better understand whether that setting is suitable for your application
    Note: The "Live Mode" overrules the "Initial Load" setting. Therefore, even if the initial load is disabled, data will be loaded on the initial loading of the application.
 
 2. Repeat the same steps as in exercise 5.1 step 3 above to open the application and record the network traffic.
-   1. Open the app in Chrome via the URL `http://localhost:4004/launchpage.html`. Reload the page in case you did not open it freshly.
+   1. Open the app in Chrome via the URL ([http://localhost:4004/launchpage.html](http://localhost:4004/launchpage.html)). Reload the page in case you did not open it freshly.
    2. Click on the tile `Incident-Management-Latest-Build`.
    3. Navigate back to the Launchpad.
    4. Enable the developer tools in Chrome (F12) and make sure that the cache is enabled. Clear the `Network Log` and set the throttling to `3G`.

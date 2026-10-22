@@ -1,13 +1,13 @@
 # Exercise 0 - Run the project locally
 
 In this exercise, you will clone a sample application from GitHub and run it locally on your machine. This project is a Full-Stack CAP Application that includes both a backend service and a Fiori Elements / UI5 frontend.
-The application corresponds to the SAP tutorial ["Develop a Full-Stack CAP Application Following SAP BTP Developer’s Guide"](https://developers.sap.com/group.cap-application-full-stack.html).
+The application corresponds to the SAP mission at SAP Discovery Center ["Develop a Full-Stack CAP Application Following SAP BTP Developer’s Guide"](https://discovery-center.cloud.sap/protected/index.html#/missiondetail/4327/4608/).
 
 ## Exercise 0.1 Clone the repository
 
 After completing these steps you will have a sample application in your machine and will be able to run it locally.
 
-1. Open the Command Prompt or a Windows PowerShell and execute the following command:
+1. Open the Command Prompt or a Windows PowerShell (it should open in folder `c:\users\<user_name>`) and execute the following command:
 
    ```sh
    git clone https://github.com/SAP-samples/teched2026-JW263.git

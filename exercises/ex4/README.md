@@ -114,7 +114,7 @@ Our application is actually already optimized, but let's set some attributes to 
    npm run build:preload
    ```
 
-3. This generates a new built version in folder `app/incidents/dist`. Go back to the browser and open the local Fiori Launchpad([http://localhost:4004/launchpage.html](http://localhost:4004/launchpage.html)). Open Chrome Developer Tools in the same tab by pressing `F12` or right-clicking anywhere on the page and selecting `Inspect`. Go to the `Network` tab. Clear the `Network Log`in the `Developer Tools`.
+3. This generates a new built version in folder `app/incidents/dist`. Go back to the browser and open the local Fiori Launchpad ([http://localhost:4004/launchpage.html](http://localhost:4004/launchpage.html)). Open Chrome Developer Tools in the same tab by pressing `F12` or right-clicking anywhere on the page and selecting `Inspect`. Go to the `Network` tab. Clear the `Network Log`in the `Developer Tools`.
 
 4. Open the application `Incident-Management-Latest-Build` by clicking on the corresponding tile.
 

@@ -79,7 +79,7 @@ Missing library dependencies can happen when we rely on tools that might have a 
 
    ![Library mdc added](./images/library_mdc_added.png)
 
-2. Let's keep the previous build version so we can compare them later. Rename the folder `app/incidents/dist` into `app/incidents/dist_first_build`.
+2. Make sure the file `manifest.json` is saved with the changes. Let's keep the previous build version so we can compare them later. Rename the folder `app/incidents/dist` into `app/incidents/dist_first_build`.
 
 3. Go back to Visual Studio Code and build the application from the terminal with the following command:
 
@@ -97,7 +97,7 @@ This exercise offers a good opportunity for AI assistance. In order to show what
 
 ### Option A) AI Assistance
 
-1. On the browser, download the HAR file and save it as `incidents-app-dist-build-mdc.har` in the folder `HAR_files` located in the root folder. This is available in the Chrome Developer Tools, `Network` tab via `Export HAR` button:
+1. On the browser, download the HAR file and save it as `incidents-app-dist-build-mdc.har` in the folder `HAR_files` located in the root folder (`c:\users\<user_name>\teched2026-JW263\HAR_files`). This is available in the Chrome Developer Tools, `Network` tab via `Export HAR` button:
 
    ![Download HAR](./images/DevTools-download-HAR.png)
 
@@ -113,7 +113,7 @@ This exercise offers a good opportunity for AI assistance. In order to show what
 
    ![Analize-Optimize-Front-End](./images/skill_dependency_recommendations.png)
 
-5. Make sure to remember to rename the `app/incidents/dist` folder after every change since we are going to test them all in the next exercise. You might have less folders when using the AI Assistance option.  
+5. Make sure to remember to rename the `app/incidents/dist` folder after every change since we are going to test them all in the next exercise. You might have less folders when using the AI Assistance option. The changes in file `manifest.json` can be performed either manually or also via Claude Code in this case since it is running inside the IDE.  
 
 ### Backup Skill
 
